@@ -1,36 +1,13 @@
 {
   "name": "@revgaming/helpers",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/estagent/helpers",
   "description": "helper functions",
   "main": "src/index.js",
-  "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/node": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "core-js": "^3.8.1",
-    "dotenv": "^8.2.0",
-    "path": "^0.12.7",
-    "webpack": "^5.11.0"
-  },
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "useBuiltIns": "entry",
-          "corejs": {
-            "version": 3,
-            "proposals": true
-          }
-        }
-      ]
-    ]
-  },
-  "scripts": {
-    "build": "webapck",
-    "test": "babel-node ./tests/test.js"
-  }
+  "keywords": [
+    "javascript",
+    "helpers"
+  ],
+  "scripts": {}
 }
