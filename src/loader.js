@@ -1,6 +1,6 @@
 const _setOrThrowExists = (target, key, value) => {
-    if (typeof target[key] !== undefined)
-        throw `${key} already exists `
+    if (target[key] !== undefined)
+        throw `${key} already exists`
     target[key] = value;
 }
 
