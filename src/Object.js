@@ -1,47 +1,41 @@
 export const findAll = (objects, search) => {
-    const results = [];
-    for (let object of objects) {
-        for (let key of Object.keys(search)) {
-            if (object[key] === search[key]) {
-                if (search[key] !== undefined)
-                    results.push(object)
-            }
-        }
+  const results = []
+  for (let object of objects) {
+    for (let key of Object.keys(search)) {
+      if (object[key] === search[key]) {
+        if (search[key] !== undefined) results.push(object)
+      }
     }
-    return results;
+  }
+  return results
 }
 
 export const findFirst = (objects, search) => {
-    for (let object of objects) {
-        for (let key of Object.keys(search)) {
-            if (object[key] === search[key]) {
-                if (search[key] !== undefined)
-                    return object;
-            }
-        }
+  for (let object of objects) {
+    for (let key of Object.keys(search)) {
+      if (object[key] === search[key]) {
+        if (search[key] !== undefined) return object
+      }
     }
+  }
 }
-
 
 export const pluck = (objects, key) => {
-    const results = [];
-    for (let object of objects) {
-        if (object[key]) results.push(object[key]);
-    }
-    return results;
+  const results = []
+  for (let object of objects) {
+    if (object[key]) results.push(object[key])
+  }
+  return results
 }
 
-
 export const pluckKeys = (objects, keys) => {
-    const results = [];
-    for (let object of objects) {
-        const ob = {};
-        for (let key of keys) {
-            if (object[key])
-                ob[key] = object[key]
-        }
-        if (Object.keys(ob).length)
-            results.push(ob);
+  const results = []
+  for (let object of objects) {
+    const ob = {}
+    for (let key of keys) {
+      if (object[key]) ob[key] = object[key]
     }
-    return results;
+    if (Object.keys(ob).length) results.push(ob)
+  }
+  return results
 }
