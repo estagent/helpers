@@ -5,7 +5,8 @@ const _setOrThrowExists = (target, key, value) => {
 
 export default (target = {}) => {
   target['load'] = function (mixed) {
-    if (arguments.length > 1) for (let element of arguments) this.load(element)
+    if (arguments.length > 1)
+      Array.from(arguments).forEach(element => this.load(element))
     else if (Array.isArray(mixed)) for (let element of mixed) this.load(element)
     else if (typeof mixed === 'object')
       for (let key of Object.keys(mixed))
