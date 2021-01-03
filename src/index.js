@@ -1,6 +1,6 @@
 import loader from './loader'
-import mergeOptions from './mergeOptions'
-import {findAll, findFirst, pluck, pluckKeys} from './Object'
+import {findAll, findFirst, pluck, pluckKeys,mergeOptions} from './objects'
+import {getEventDetail} from './hashes'
 
 export {
   loader,
@@ -9,4 +9,5 @@ export {
   findFirst,
   pluck,
   pluckKeys,
+  getEventDetail,
 }

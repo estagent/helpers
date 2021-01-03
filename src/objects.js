@@ -1,3 +1,14 @@
+export const mergeOptions = (options, defaults) => {
+  if (options) {
+    for (let key of Object.keys(defaults)) {
+      if (options.hasOwnProperty(key)) {
+        defaults[key] = options[key]
+      }
+    }
+  }
+  return defaults
+}
+
 export const findAll = (objects, search) => {
   const results = []
   for (let object of objects) {
