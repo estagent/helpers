@@ -1,3 +1,12 @@
+export const merge = (...objects) => {
+  const merged = {}
+  for (const obj of objects) {
+    for (const key of Object.keys(obj)) {
+      merged[key] = obj[key]
+    }
+  }
+  return merged
+}
 export const mergeOptions = (options, defaults) => {
   if (options) {
     for (let key of Object.keys(defaults)) {
