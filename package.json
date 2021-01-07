@@ -1,7 +1,7 @@
 {
   "name": "@revgaming/helpers",
   "author": "estagent <estagent@gmail.com>",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "homepage": "https://github.com/estagent/helpers",
   "description": "helper functions",
   "main": "src/index.js",

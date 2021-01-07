@@ -21,3 +21,5 @@ export {
   getEventUser,
   listenEvents,
 }
+
+export const AppHelpers = [listenEvents];
