@@ -7,7 +7,7 @@ import {
   mergeOptions,
   merge,
 } from './objects'
-import {getEventDetail, getEventUser} from './hashes'
+import {listenEvents, getEventDetail, getEventUser} from './events'
 
 export {
   loader,
@@ -19,4 +19,5 @@ export {
   pluckKeys,
   getEventDetail,
   getEventUser,
+  listenEvents,
 }
